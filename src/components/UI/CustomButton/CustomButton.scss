@@ -1,0 +1,34 @@
+.custom__button {
+  position: relative;
+  background-color: #028372;
+  color: #ffffff;
+  padding: 5px;
+  min-width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  transition: all 0.4s;
+  border: none;
+  font-family: "Open Sans";
+  font-weight: 600;
+  cursor: pointer;
+  &.icon{
+    min-width: 40px;
+  }
+  &:hover {
+    background-color: #016257;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+
+  }
+  .edit {
+    background-image: url("./../../../Assets/img/edit.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

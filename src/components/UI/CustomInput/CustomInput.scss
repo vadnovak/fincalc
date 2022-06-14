@@ -1,0 +1,11 @@
+.custom__input {
+  width: 100%;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #04392C;
+  font-family: "Open Sans";
+  border-radius: 4px;
+  &:focus-visible {
+    outline: 1px solid #028372;
+  }
+}

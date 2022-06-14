@@ -1,0 +1,42 @@
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_left {
+    display: flex;
+    align-items: center;
+  }
+  &_id, &_currency {
+    font-weight: 600;
+  }
+  &_title {
+    min-width: 140px;
+  }
+  &_amount {
+    min-width: 70px;
+  }
+
+  p {
+    margin-right: 20px;
+    transition: all 0.4s;
+
+    &:hover {
+      color: #028372;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+}
