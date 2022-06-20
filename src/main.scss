@@ -27,13 +27,56 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+#root {
+    background-color: #eeeff3;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    &:after {
+        content: '';
+        background-color: #BBC3CF;
+        width: 90%;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        border-radius: 0 0 15px 15px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 50%;
+        height: 25vh;
+        transform: translateX(-50%);
+        box-shadow: 0 0 26px 9px #2d2d2d26;
+    }
+}
 
 
 .App {
     display: flex;
+    max-width: 800px;
     flex-direction: column;
-    align-items: center;
-    background-color: #eeeff3;
+    width: 100%;
     padding: 20px;
-
+    background-color: #eeeff3;
+    box-shadow: 0 0 26px 9px #2d2d2d26;
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    height: fit-content;
 }
+
+.item-enter {
+    opacity: 0;
+}
+.item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.item-exit {
+    opacity: 1;
+}
+.item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+

@@ -1,12 +1,11 @@
 import React from 'react';
 import './CustomButton.scss'
 
-const CustomButton = ({children, iconClass}) => {
+const CustomButton = (props) => {
+    const {children, className} = props
     return (
-        <button className={iconClass ? 'custom__button icon' : 'custom__button'}>
-            { iconClass === undefined ? children :
-                <span className={iconClass}/>
-            }
+        <button {...props} className={className ? "custom__button " + className : "custom__button"}>
+            {className === 'icon edit' ? <span className={className}/> : children}
         </button>
     )
 }

@@ -15,10 +15,14 @@
     display: flex;
     align-items: center;
   }
+  &_id {
+    color: #028372;
+  }
   &_id, &_currency {
     font-weight: 600;
   }
   &_title {
+    font-weight: bold;
     min-width: 140px;
   }
   &_amount {
@@ -36,7 +40,17 @@
     &:last-child {
       margin-right: 0;
     }
+
   }
+
+  &_button {
+    display: flex;
+    align-items: center;
+    .custom__button:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+
 
 
 }
